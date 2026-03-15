@@ -3,14 +3,6 @@ using LowoUN.UI;
 using UnityEngine;
 
 namespace LowoUN.Scene {
-    public enum GameState : byte {
-        None = 0,
-        Splash,
-        Login,
-        Lobby,
-        Battle
-    }
-
     public class GameController : MonoBehaviour {
         public static GameController Instance { get; private set; }
         private GameState oldState = GameState.None;
